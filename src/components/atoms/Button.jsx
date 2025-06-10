@@ -1,13 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const Button = ({ children, className = '', onClick, type = 'button', whileHover, whileTap, icon: Icon, iconSize, iconClassName, ...props }) => {
+const Button = ({ children, className = '', onClick, type = 'button', whileHover, whileTap, icon: Icon, iconName, iconSize, iconClassName, ...props }) => {
     const hasMotionProps = whileHover || whileTap;
     const Component = hasMotionProps ? motion.button : 'button';
 
-    // Filter out all Framer Motion props and custom props
+    // Filter out all Framer Motion props and custom props that shouldn't reach DOM
     const motionProps = ['whileHover', 'whileTap', 'initial', 'animate', 'exit', 'variants', 'transition', 'drag', 'dragConstraints', 'whileDrag', 'layout', 'layoutId'];
-    const customProps = ['icon', 'iconSize', 'iconClassName'];
+    const customProps = ['icon', 'iconName', 'iconSize', 'iconClassName'];
     const propsToFilter = [...motionProps, ...customProps];
     
     const filteredProps = Object.keys(props).reduce((acc, key) => {
