@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "title": "Review quarterly marketing reports and prepare presentation for board meeting",
+    "completed": false,
+    "priority": "high",
+    "dueDate": "2024-01-15",
+    "categoryId": "1",
+    "createdAt": "2024-01-10T09:00:00.000Z",
+    "completedAt": null
+  },
+  {
+    "id": "2",
+    "title": "Update project documentation and API specifications",
+    "completed": false,
+    "priority": "medium",
+    "dueDate": "2024-01-18",
+    "categoryId": "2",
+    "createdAt": "2024-01-10T10:30:00.000Z",
+    "completedAt": null
+  },
+  {
+    "id": "3",
+    "title": "Schedule dentist appointment for annual checkup",
+    "completed": true,
+    "priority": "low",
+    "dueDate": "2024-01-12",
+    "categoryId": "3",
+    "createdAt": "2024-01-08T14:15:00.000Z",
+    "completedAt": "2024-01-11T16:45:00.000Z"
+  },
+  {
+    "id": "4",
+    "title": "Research and compare cloud hosting providers for new project deployment",
+    "completed": false,
+    "priority": "medium",
+    "dueDate": "2024-01-20",
+    "categoryId": "2",
+    "createdAt": "2024-01-09T11:20:00.000Z",
+    "completedAt": null
+  },
+  {
+    "id": "5",
+    "title": "Plan and organize team building event for Q1",
+    "completed": false,
+    "priority": "low",
+    "dueDate": "2024-01-25",
+    "categoryId": "1",
+    "createdAt": "2024-01-09T13:45:00.000Z",
+    "completedAt": null
+  },
+  {
+    "id": "6",
+    "title": "Complete online course on React performance optimization",
+    "completed": false,
+    "priority": "medium",
+    "dueDate": null,
+    "categoryId": "4",
+    "createdAt": "2024-01-07T16:30:00.000Z",
+    "completedAt": null
+  },
+  {
+    "id": "7",
+    "title": "Buy groceries and prepare meal prep for the week",
+    "completed": false,
+    "priority": "high",
+    "dueDate": "2024-01-14",
+    "categoryId": "3",
+    "createdAt": "2024-01-11T08:00:00.000Z",
+    "completedAt": null
+  }
+]

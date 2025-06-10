@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "name": "Work",
+    "color": "#5B4FE9",
+    "taskCount": 3
+  },
+  {
+    "id": "2",
+    "name": "Development",
+    "color": "#2196F3",
+    "taskCount": 2
+  },
+  {
+    "id": "3",
+    "name": "Personal",
+    "color": "#4CAF50",
+    "taskCount": 2
+  },
+  {
+    "id": "4",
+    "name": "Learning",
+    "color": "#FF9800",
+    "taskCount": 1
+  },
+  {
+    "id": "5",
+    "name": "Health",
+    "color": "#E91E63",
+    "taskCount": 0
+  }
+]
