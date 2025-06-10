@@ -1,4 +1,4 @@
-import Home from '../pages/Home';
+import HomePage from '@/components/pages/HomePage';
 
 export const routes = {
   home: {
@@ -6,7 +6,7 @@ export const routes = {
     label: 'Home',
     path: '/home',
     icon: 'Home',
-    component: Home
+component: HomePage
   }
 };
 

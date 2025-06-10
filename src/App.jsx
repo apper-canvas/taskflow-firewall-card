@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import Layout from './Layout';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
+import HomePage from '@/components/pages/HomePage';
+import NotFoundPage from '@/components/pages/NotFoundPage';
 import { routes } from './config/routes';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+<Route index element={<HomePage />} />
           {Object.values(routes).map(route => (
             <Route
               key={route.id}
@@ -18,7 +18,7 @@ function App() {
               element={<route.component />}
             />
           ))}
-          <Route path="*" element={<NotFound />} />
+<Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
       

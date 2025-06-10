@@ -1,8 +1,11 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import ApperIcon from '../components/ApperIcon';
+import ApperIcon from '@/components/ApperIcon';
+import Button from '@/components/atoms/Button';
+import Text from '@/components/atoms/Text';
 
-function NotFound() {
+function NotFoundPage() {
   const navigate = useNavigate();
 
   return (
@@ -18,27 +21,30 @@ function NotFound() {
         >
           <ApperIcon name="Search" className="w-24 h-24 text-surface-400 mx-auto mb-6" />
         </motion.div>
-        
-        <h1 className="text-4xl font-heading font-bold text-surface-900 mb-4">
+
+        <Text as="h1" className="text-4xl font-heading font-bold text-surface-900 mb-4">
           Page Not Found
-        </h1>
-        
-        <p className="text-surface-600 mb-8 max-w-md mx-auto">
+        </Text>
+
+        <Text as="p" className="text-surface-600 mb-8 max-w-md mx-auto">
           The page you're looking for doesn't exist. Let's get you back on track with your tasks.
-        </p>
-        
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+        </Text>
+
+        <Button
           onClick={() => navigate('/')}
           className="inline-flex items-center px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          icon={ApperIcon}
+          iconName="Home"
+          iconSize={20}
+          iconClassName="mr-2"
         >
-          <ApperIcon name="Home" size={20} className="mr-2" />
           Back to Tasks
-        </motion.button>
+        </Button>
       </motion.div>
     </div>
   );
 }
 
-export default NotFound;
+export default NotFoundPage;
